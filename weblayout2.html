@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-layout 2</title>
+    <style>
+        *{
+           margin:0px;
+           border:0px;
+           box-sizing: border-box;
+        
+         }
+         #header{
+             width:100%;
+             min-height:40px;
+             background-color: burlywood;
+             border:1px solid black;
+             text-align:center;
+             line-height:30px;
+
+         }
+         #navi{
+             width:100%;
+             min-height:40px;
+             background-color: bisque;
+             border:1px solid black;
+             text-align: center;
+             line-height:30px;
+         }
+         #menu{
+            width:100%;
+            background-color: aqua;
+            
+            
+
+         }
+         #in{
+            width:20%;
+            min-height:400px;
+            text-align:center;
+            line-height:30px;
+            background-color: antiquewhite;
+            float:left;
+            border-left:1px solid black;
+
+         }
+         #co{
+            width:70%;
+            min-height:400px;
+            text-align:center;
+            line-height:30px;
+            background-color: blanchedalmond;
+            float:right;
+         }
+         .clearfix::after{
+            content:"";
+            clear:both;
+            display:block;
+         }
+         #footer{
+            width:100%;
+            min-height:40px;
+            background-color: hotpink;
+            text-align:center;
+            line-height:40px;
+         }
+
+    </style>
+</head>
+<body>
+    <header id="header"><b>Header-Section</b></header>
+    <div id="navi"><b>Navigation Bar</b></div>
+    <div id="menu" class="clearfix">
+        <div id="in">
+            Index
+        </div>
+        <div id="co">
+            Content section
+        </div></div>
+        <footer id="footer">footer</footer>
+
+</body>
+</html>
